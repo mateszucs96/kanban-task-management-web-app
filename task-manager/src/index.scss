@@ -1,0 +1,15 @@
+/* 1. Box sizing + margin/padding reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Body baseline */
+html,
+body,
+#root {
+  height: 100%;
+}
