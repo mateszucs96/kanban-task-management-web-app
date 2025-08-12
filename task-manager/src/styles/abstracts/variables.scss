@@ -22,3 +22,48 @@
   --fs-400: 1.8rem;
   --fs-500: 2.4rem;
 }
+
+:root {
+  /* surfaces & backgrounds */
+  --color-bg: var(--clr-grey-800);
+  --color-surface: var(--clr-grey-600);
+  --color-surface-2: var(--clr-grey-500);
+  --color-border: var(--clr-grey-500);
+  --color-divider: var(--clr-grey-500);
+
+  /* text */
+  --color-text: var(--clr-white);
+  --color-text-muted: var(--clr-grey-300);
+  --color-text-inverse: var(--clr-black-500);
+
+  /* brand & interactive */
+  --color-primary: var(--clr-purple-300);
+  --color-primary-hover: var(--clr-purple-500);
+  --color-danger: var(--clr-red-500);
+  --color-danger-hover: var(--clr-red-300);
+  --color-focus-ring: var(--clr-purple-300);
+
+  /* overlay */
+  --color-backdrop: rgba(0, 0, 0, 0.6);
+}
+
+:root {
+  /* buttons */
+  --btn-bg: var(--color-primary);
+  --btn-bg-hover: var(--color-primary-hover);
+  --btn-text: var(--color-text-inverse);
+
+  /* danger buttons */
+  --btn-danger-bg: var(--color-danger);
+  --btn-danger-bg-hover: var(--color-danger-hover);
+
+  /* cards */
+  --card-bg: var(--color-surface);
+  --card-border: var(--color-border);
+
+  /* pills / statuses */
+  --pill-todo-bg: #49c4e5;
+  --pill-doing-bg: var(--clr-purple-500);
+  --pill-done-bg: #67e2ae;
+  --pill-text: var(--color-text-inverse);
+}
