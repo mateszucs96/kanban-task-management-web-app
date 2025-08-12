@@ -1,14 +1,16 @@
 import './App.css';
-import Board from './components/Board/Board';
+import Board from './features/Board/Board';
 import Header from './components/Header/Header';
-// import SideBar from './components/Sidebar/SideBar';
+import SideBar from './components/Sidebar/SideBar';
 
 function App() {
   return (
     <>
       <Header />
-
-      <Board />
+      <div className='main-wrapper'>
+        <SideBar />
+        <Board />
+      </div>
     </>
   );
 }

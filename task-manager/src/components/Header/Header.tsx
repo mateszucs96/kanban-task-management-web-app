@@ -1,4 +1,5 @@
 import logo from '../../../../starter-code/assets/logo-dark.svg';
+import logoMobile from '../../../../starter-code/assets/logo-mobile.svg';
 import ellipsis from '../../../../starter-code/assets/icon-vertical-ellipsis.svg';
 import styles from './Header.module.scss';
 import Button from '../Button/Button';
@@ -8,7 +9,10 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles['header__logo-container']}>
-        <img src={logo} alt='Logo with kanban text' />
+        <picture>
+          <source media='(min-width: 768px)' srcSet={logo} />
+          <img src={logoMobile} alt='Logo with kanban text' />
+        </picture>
         <h1>Platform Launch</h1>
       </div>
       <div>

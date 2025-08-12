@@ -1,0 +1,16 @@
+@import '../../styles/abstracts/variables.scss';
+.sidebar {
+  position: sticky; /* stays put while content scrolls */
+  top: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  width: 200px;
+  border-right: 1px solid red;
+  transition: width 200ms ease;
+  overflow: hidden;
+
+  &.collapsed {
+    width: 0;
+  }
+}
