@@ -1,9 +1,26 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 9.6rem;
+  padding: 0 2.4rem 0 3.2rem;
   background-color: var(--color-surface);
 
-  > * {
+  &__logo {
     display: flex;
+    align-items: center;
+    border-right: 1px solid var(--color-border);
+    align-self: stretch;
+    width: 300px;
+  }
+
+  &__control {
+    display: flex;
+    gap: 2.4rem;
+  }
+
+  h1 {
+    margin-left: 2.4rem;
+    margin-right: auto;
   }
 }

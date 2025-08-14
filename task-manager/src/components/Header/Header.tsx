@@ -8,14 +8,14 @@ import { ButtonLabel } from '../../types/button';
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div className={styles['header__logo-container']}>
+      <div className={styles['header__logo']}>
         <picture>
           <source media='(min-width: 768px)' srcSet={logo} />
           <img src={logoMobile} alt='Logo with kanban text' />
         </picture>
-        <h1>Platform Launch</h1>
       </div>
-      <div>
+      <h1>Platform Launch</h1>
+      <div className={styles['header__control']}>
         <Button label={ButtonLabel.ADD_NEW_TASK} />
         <img src={ellipsis} alt='Vertical ellipsis' />
       </div>
